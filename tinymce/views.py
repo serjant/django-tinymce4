@@ -6,7 +6,7 @@ from django.core import urlresolvers
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
 from django.template import RequestContext, loader
-import simplejson
+import json as simplejson
 from django.utils.translation import ugettext as _
 from tinymce.compressor import gzip_compressor
 from tinymce.widgets import get_language_config
