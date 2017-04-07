@@ -11,7 +11,10 @@ from django import forms
 from django.conf import settings
 from django.contrib.admin import widgets as admin_widgets
 from django.core.urlresolvers import reverse
-from django.forms.widgets import flatatt
+try:
+    from django.forms.utils import flatatt
+except:
+    from django.forms.widgets import flatatt
 try:
     from django.utils.encoding import smart_text as smart_unicode
 except ImportError:
